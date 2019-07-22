@@ -1,0 +1,5 @@
+<% @artists.each do |artist| %>
+  <%= link_to artist.name, artist_path(artist) %> <br>
+<% end %>
+
+<%= link_to "new", new_artist_path %> <br>
