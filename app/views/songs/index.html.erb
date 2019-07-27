@@ -1,4 +1,4 @@
 <h1>Songs</h1>
 <% @songs.each do |s| %>
-<p><%= link_to s.name, s %> - <%= s.artist %> | <%= s.genre %></p>
+<p><%= link_to s.name, s %> - <%= s.artist.name if s.artist %> | <%= s.genre.name if s.genre %></p>
 <% end %>
